@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:backgroundTint="@color/teal_700"
+    android:backgroundTintMode="multiply"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Note1"
+        android:layout_width="152dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="5"
+        android:hint=" Nota 1"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/Note2"
+        android:layout_width="152dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="5"
+        android:hint=" Nota 2"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Note1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Absence"
+        android:layout_width="152dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="5"
+        android:hint=" Faltas"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Note2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Calcular"
+        android:layout_width="215dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="96dp"
+        android:background="@null"
+        android:backgroundTint="@color/white"
+        android:text="@string/Calcular"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Absence" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calcular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
